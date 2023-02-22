@@ -7,7 +7,7 @@ export default function DataTable({data, fetch}) {
   async function deleteKaryawan(id) {
     try {
         const response = await axios.delete(
-          `${urlApi}jabatan/${id}`,
+          `${urlApi}karyawan/${id}`,
         );
         if (response) {
           fetch()
